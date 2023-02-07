@@ -1,5 +1,5 @@
 # Small-Projects
-This repo contains a collection of small projects implemented using Java, Python, and C.
+This repo contains a collection of small projects implemented using Java, Python, C, and JavaScript for practicing purposes.
 <br />
 ## Network Security - RSA
 I designed this C program to utilize RSA algorithm to ensure network security. With the use of a public key and protected private key, encrypted data can be securely sent to destination without being leaked or exposed.
