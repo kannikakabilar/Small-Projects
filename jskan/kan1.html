@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Changing HTML content using getElementById</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me To Change Content In Above Tag</button>
+
+
+        <h2>Changing image using button onclick</h2>
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+        <h2>Changing style(display) using button onclick</h2>
+        <p id="demo3">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">Disappear</button>
+        <button type="button" onclick="document.getElementById('demo3').style.display='block'">Appear</button>
+        
+        <h2>Changing style(fontSize) using button onclick</h2>
+        <p id="demo2">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me To Increase The FontSize of the Above Tag</button>
+
+
+        <h2>Script Tag Example</h2>
+        <script>
+            function myFunction() {
+              document.getElementById("demo4").innerHTML = "Paragraph changed.";
+            }
+        </script>
+        <p>In an HTML file, JavaScript code is written in script tags. Script tags can be placed in the head tag or the body tag. Placing script tags at the end of the HTML file helps the page load faster.</p>
+        <p id="demo4">Sample Paragraph Tag</p>
+        <button type="button" onclick="myFunction()">Button Onclick Calls a function in Script Tag</button>
+
+
+        <h2>External JavaScript</h2>
+        <!-- Import JavaScript code from myscript.js file using the below stattement-->
+        <script src="myscript.js"></script>
+        <!-- External JavaSricpt can be included in 3 ways:
+            - With a full URL (a full web address): <script src="https://www.w3schools.com/js/myScript.js"></script>
+            - With a file path: <script src="/like/this/myScript.js"></script>
+            - Without any path: like given below
+        -->
+        <p id="demo5">Sample Paragraph Tag 2</p>
+        <button type="button" onclick="myFunction2()">Button Onclick Calls a function in External JavaScript File</button>
+
+        
+        <h2>Displaying Data with JavaScript</h2>
+        <!-- There are 4 ways:
+            - innerHTML: like shown above
+            - document.write()
+            - alert()
+            - console.log()
+        -->
+        <h3>document.write() Example: 5 + 4 = 9</h3>
+        <script>
+            document.write(5 + 4);
+        </script>
+        <p>*Note: Using document.write() after an HTML document is loaded, will delete all existing HTML. Generally, the document.write() method should only be used for testing.</p>
+        <button type="button" onclick="document.write(5 + 4)">This Button Will Erase This HTML Page</button>
+
+        <h3>alert() Example: 15 + 4 = 19</h3>
+        <script>
+            //alert(15 + 4);
+        </script>
+
+        <h3>console.log() Example: 155 + 44 = 199</h3>
+        <p>On Mac: option + cmd + J</p>
+        <p>On Windows: Shift + Ctrl + J</p>
+        <script>
+            console.log(155 + 44);
+        </script>
+
+        <h3>You can print this page with window.print()</h3>
+        <button onclick="window.print()">Print this page</button>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+div { height: 40%; width: 100%; background: #F52887; background-image: url("hardware2.jpg"); background-size: cover; background-repeat: no-repeat; color: white; text-align: center; font-size: 170%; vertical-align: middle;}
